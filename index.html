@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Parcial</title>
+	<style type="text/css">
+		.papi{
+			position: absolute;
+	        top: 3px;
+	        left: 150px;
+	        width: 1000px;
+	        height: 600px;
+	        background: red;
+	        font-size: 80px;
+	        border-radius: 50px 20px 50px 20px;
+	        box-shadow: 5px 5px 5px;
+	        border: solid;
+		}
+
+		.tem1{
+			position: absolute;
+	        top: 3px;
+	        left: 3px;
+	        width: 160px;
+	        height: 110px;
+	        background: white;
+	        font-size: 50px;
+	        border-radius: 50px 20px 50px 20px;
+	        box-shadow: 5px 5px 5px;
+	        border: solid;
+	        font-family: Times New Roman;
+	        text-align: center;
+	        line-height: 110px;
+		}
+
+		.tem2{
+			position: absolute;
+	        top: 480px;
+	        left: 827px;
+	        width: 160px;
+	        height: 110px;
+	        background: white;
+	        font-size: 50px;
+	        border-radius: 50px 20px 50px 20px;
+	        box-shadow: 5px 5px 5px;
+	        border: solid;
+	        font-family: Times New Roman;
+	        text-align: center;
+	        line-height: 110px;
+		}
+
+		.play{
+			position: absolute;
+	        top: 3px;
+	        left: 827px;
+	        width: 160px;
+	        height: 110px;
+	        background: white;
+	        font-size: 50px;
+	        border-radius: 60px;
+	        box-shadow: 5px 5px 5px;
+	        border: solid;
+	        font-family: Times New Roman;
+	        text-align: center;
+	        line-height: 110px;
+		}
+        
+
+        .cua{
+			position: absolute;
+	        top: 5px;
+	        left: 200px;
+	        width: 600px;
+	        height: 580px;
+	        background: white;
+	        font-size: 110px;
+	        border-radius: 60px;
+	        box-shadow: 5px 5px 5px;
+	        font-family: Georgia;
+	        text-align: center;
+	        border: solid;
+	        display: none;
+
+		}
+
+		.cua1{
+			position: absolute;
+	        top: 5px;
+	        left: 200px;
+	        width: 600px;
+	        height: 580px;
+	        background: white;
+	        font-size: 110px;
+	        border-radius: 60px;
+	        box-shadow: 5px 5px 5px;
+	        font-family: Georgia;
+	        text-align: center;
+	        border: solid;
+	        display: none;
+		}
+
+		.cerrar{
+			position: absolute;
+	        top: 400px;
+	        left: 420px;
+	        width: 160px;
+	        height: 110px;
+	        background: white;
+	        font-size: 50px;
+	        border-radius: 60px;
+	        border: solid;
+	        font-family: Times New Roman;
+	        text-align: center;
+	        line-height: 110px;
+
+	        
+		}
+
+		.cerrar2{
+			position: absolute;
+	        top: 400px;
+	        left: 420px;
+	        width: 160px;
+	        height: 110px;
+	        background: white;
+	        font-size: 50px;
+	        border-radius: 60px;
+	        border: solid;
+	        font-family: Times New Roman;
+            text-align: center;
+	        line-height: 110px;
+	        
+		}
+
+		.tex{
+			font-size: 20px;
+			font-family: Times New Roman;
+		}
+
+		.tex2{
+			font-size: 20px;
+			font-family: Times New Roman;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+<video loop="" src="profe.m4a" id="LOLA"></video> 
+<div class="papi">
+<div class="play" id="soni" onclick="document.getElementById('LOLA').play()">Play <video src="sonido.m4a" id="LOLA"></video> </div>
+<div class="tem1"id="tem1" onclick="document.getElementById('cua').style.display='block'">Tema 1</div>
+
+<div class="tem2" id="tem2" onclick="document.getElementById('cua1').style.display='block'">Tema 2</div>
+<div class="cua" id="cua"><font face="algerian" color="#000000">Tema 1 <div class="tex">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></font>
+<div class="cerrar" id="ce1" onclick="document.getElementById('cua').style.display='none'"><center> Cerrar</center>
+</div>
+<img src="tema1.png">	
+</div>
+<div class="cua1" id="cua1"><font face="algerian" color="#000000">Tema 2 <div class="tex2">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></font>
+<div class="cerrar2" id="ce2" onclick="document.getElementById('cua1').style.display='none'"><center> Cerrar</center>
+</div>	
+<img src="tema2.png">	
+</div>
+
+</div>
+</body>
+</html>
